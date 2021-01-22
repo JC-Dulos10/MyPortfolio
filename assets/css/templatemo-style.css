@@ -191,7 +191,7 @@ html {
 
 .menu .copyright-text {
     position: relative;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .menu .copyright-text p {
@@ -325,6 +325,7 @@ html {
     font-size: 24px;
     color: #fff;
     letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 
