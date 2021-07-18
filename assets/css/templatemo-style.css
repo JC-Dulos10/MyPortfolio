@@ -1,10 +1,4 @@
-/*
 
-Reflux Template
-
-https://templatemo.com/tm-531-reflux
-
-*/
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
@@ -20,9 +14,6 @@ body {
     background-size: cover;
     width: 100%;
 }
-
-
-/* Basic */
 
 body {
     overflow-x: hidden;
@@ -229,23 +220,23 @@ html {
 
 .menu {
     left: 10%;
-  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  -webkit-overflow-scrolling: touch;
-  background-color: #ffc40c;
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
-  min-width: 45px !important;
-  outline: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  padding: 0;
-  position: fixed !important;
-  top: calc(0px);  
-  width: 20%;
-  will-change: transform;
-  z-index: 9999 !important;
+    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    -webkit-overflow-scrolling: touch;
+    background-color: #ffc40c;
+    box-sizing: border-box;
+    height: 100vh;  
+    max-height: 100vh !important;
+    max-width: 80vw !important;
+    min-width: 45px !important;
+    outline: none;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 0;
+    position: fixed !important;
+    top: calc(0px);  
+    width: 20%;
+    will-change: transform;
+    z-index: 9999 !important;
 }
 
 .menu-toggle {
@@ -367,7 +358,6 @@ button:hover {
     outline: none;
     background-color: #ffff66;
     color: #a43f49;
-}
 }
 
 
