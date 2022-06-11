@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proj</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="resetStorage()">
+<div class="container" >
+	<!-- navbar -->
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		 <a class="navbar-brand" href="#">Proj</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+		      <a class="nav-item nav-link" data-toggle="modal" data-target="#modalRegister">Register</a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+	<!-- Login -->
+	<!-- Modal -->
+	<div id="modalLogin" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+						
+							<!-- modal content header -->
+					<div class="modal-header">
+						<h5>LOGIN</h5>
+					</div>
+
+							<!-- modal content body -->
+					<div class="modal-body">
+						<form action="movieStore.html" method="GET" id="submitForm">
+							<div class="form-group">
+							    <label for="username">Username</label>
+							    <input type="text" class="form-control" id="username">
+							</div>
+							<div class="form-group">
+							    <label for="Password">Password</label>
+								<input type="password" class="form-control" id="Password">
+							</div>
+						</form>
+
+							<!-- modal content footer -->
+					<div class="modal-footer">
+						<button class="btn btn-primary" onclick="SubmitForm()"> Submit </button>
+						<button class="btn btn-danger" data-dismiss="modal">close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!-- Register -->
+	<div id="modalRegister" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+						
+						<!-- modal content header -->
+				<div class="modal-header">
+					<h5>Register</h5>
+				</div>
+
+						<!-- modal content body -->
+				<div class="modal-body">
+						<form action="movieStore.html" method="GET" id="submitForm">
+							<div class="form-group">
+							    <label for="Name">Name</label>
+							    <input type="text" class="form-control" id="Name">
+							</div>
+							<div class="form-group">
+							    <label for="email">Email Address</label>
+							    <input type="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+							    <label for="username">Username</label>
+							    <input type="text" class="form-control" id="username">
+							</div>
+							<div class="form-group">
+							    <label for="Password">Password</label>
+								<input type="password" class="form-control" id="Password">
+							</div>
+						</form>
+					</div>
+
+							<!-- modal content footer -->
+					<div class="modal-footer">
+						<button class="btn btn-primary" onclick="SubmitForm()"> Submit </button>
+						<button class="btn btn-danger" data-dismiss="modal">close</button>
+					</div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<!-- carousel -->
+	<div style="height: 500px; width: 500px;text-align: center;margin-right: auto;margin-left: auto;">
+		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+	 		<div class="carousel-inner">
+
+	    		<div class="carousel-item">
+	     			<img src="../Images/cnd.png" class="d-block w-100" alt="First Item">
+	     			<div class="textbox">
+	     				<h5>Cyndaquil</h5>
+	     				<p>Cyndaquil (Japanese: ヒノアラシ Hinoarashi) is a Fire-type Pokémon introduced in Generation II. It evolves into Quilava starting at level 14, which evolves into Typhlosion starting at level 36. Along with Chikorita and Totodile, Cyndaquil is one of the three starter Pokémon of Johto available at the beginning of Pokémon Gold, Silver, Crystal, HeartGold, and SoulSilver.</p>
+	     			</div>
+	   		   	</div>
+
+	   			<div class="carousel-item">
+	      			<img src="../Images/Piplup.jpg" class="d-block w-100" alt="Second Item">
+	      			<div class="textbox">
+	      				<h5>Piplup</h5>
+	     				<p>Piplup (Japanese: ポッチャマ Pochama) is a Water-type Pokémon introduced in Generation IV. It evolves into Prinplup starting at level 16, which evolves into Empoleon starting at level 36. Along with Turtwig and Chimchar, Piplup is one of three starter Pokémon of Sinnoh available at the beginning of Pokémon Diamond, Pearl, and Platinum.</p>
+	     			</div>
+	    		</div>
+	    
+	    		<div class="carousel-item active">
+	     			<img src="../Images/pikachu.jpeg" class="d-block w-100" alt="Third Item">
+	     			<div class="textbox">
+	      				<h5>Pikachu</h5>
+	     				<p>Pikachu (Japanese: ピカチュウ Pikachu) is an Electric-type Pokémon introduced in Generation I. It evolves from Pichu when leveled up with high friendship and evolves into Raichu when exposed to a Thunder Stone. However, the starter Pikachu in Pokémon Yellow will refuse to evolve into Raichu unless it is traded and evolved on another save file. In Alola, Pikachu will evolve into Alolan Raichu when exposed to a Thunder Stone. It also has a Gigantamax form. Pikachu is popularly known as the mascot of the Pokémon franchise and a major representative of Nintendo's collective mascots. It is also the game mascot and starter Pokémon of Pokémon Yellow and Pokémon: Let's Go, Pikachu!. It has made numerous appearances on the boxes of spin-off titles. Pikachu is also the starter Pokémon in Pokémon Rumble Blast and Pokémon Rumble World.</p>
+	     			</div>
+	    		</div>
+
+	  		</div>
+	  
+	  		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	    		<span class="carousel-control-prev-icon"></span>
+	  		</a>
+
+	 		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  		</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

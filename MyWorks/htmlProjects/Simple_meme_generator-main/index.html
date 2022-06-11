@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>My simple meme generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="nullPic()">
+
+    <div class="container">
+        <h2>Simple Meme Generator</h2>
+        <br><br>
+        <div>
+            <form>
+                Meme text: <input type="text" id="user_text" maxlength="70" oninput="update_text()">
+                <br><br>
+                Select a picture <input type="file" id="user_picture" onchange="update_image()">
+                <br><br>
+                <div id="meme_text"></div>
+                <div id="meme_picture" style="text-align: center;"><img src="" height="500" width="600" alt="meme picture display here...select an image from your storage" id="pic" onerror="nullPic()"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

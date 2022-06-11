@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SW11</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="onLoadItemRedirectPage()">
+<div class="container">
+	<!-- navbar -->
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">SW11</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link" href="home.html">Home</a>
+		      <a class="nav-item nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+		      <a class="nav-item nav-link" data-toggle="modal" data-target="#modalRegister">Register</a>
+		      <a class="nav-item nav-link active" href="#">Order Form <span class="sr-only">(current)</span></a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+	<!-- Login -->
+	<!-- Modal -->
+	<div id="modalLogin" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+						
+							<!-- modal content header -->
+					<div class="modal-header">
+						<h5>LOGIN</h5>
+					</div>
+
+							<!-- modal content body -->
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+							    <label for="username">Username</label>
+							    <input type="text" class="form-control" id="username">
+							</div>
+							<div class="form-group">
+							    <label for="Password">Password</label>
+								<input type="password" class="form-control" id="Password">
+							</div>
+							<button type="submit" class="btn btn-primary"><a href="movieStore.html"> Submit </a></button>
+						</form>
+
+							<!-- modal content footer -->
+					<div class="modal-footer">
+						<button class="btn btn-danger" data-dismiss="modal">close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!-- Register -->
+	<div id="modalRegister" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+						
+						<!-- modal content header -->
+				<div class="modal-header">
+					<h5>Register</h5>
+				</div>
+
+						<!-- modal content body -->
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+					    	<label for="name">Name</label>
+					    	<input type="text" class="form-control" id="name">
+					    </div>
+					    <div class="form-group">
+					    	<label for="Email">Email address</label>
+					    	<input type="email" class="form-control" id="Email">
+					    </div>
+					    <div class="form-group">
+					    	<label for="username">Username</label>
+					    	<input type="text" class="form-control" id="username">
+					    </div>
+					    <div class="form-group">
+					    	<label for="Password">Password</label>
+					    	<input type="password" class="form-control" id="Password">
+					    </div>
+					  <button type="submit" class="btn btn-primary"><a href="movieStore.html"> Submit </a></button>
+					</form>
+				</div>
+
+						<!-- modal content footer -->
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal">close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="menu-card">
+		<form action="orderConfirmation.html" method="GET" id="formTest">
+			<table align="center" style="margin-top: 150px;">
+				<tr>
+					<th colspan="2">
+						<h1>Fill up the form below:</h1>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						First name: 
+					</th>
+					<td>
+						<input type="text" name="fname" id="fname" placeholder="First name here...">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Last name:
+					</th>
+					<td>
+						<input type="text" name="lname" id="lname" placeholder="Last name here...">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Address: 
+					</th>
+					<td>
+						<input type="text" name="address" id="address" placeholder="Last name here...">
+					</td>
+				</tr>
+			</table>
+			<center>
+				<button type="reset" class="btn btn-danger" value="Reset">Reset</button>
+				<button type="button" class="btn btn-primary" onclick="SubmitFunction()">Submit</button>
+			</center>
+		</form>
+	</div>
+	<br><br><br>
+	<div>
+		<center>
+		<div class="title">
+			<h1>ITEMS PURCHASED</h1>
+		</div>
+		<div class="item-purchased">
+			
+		</div>
+		</center>
+	</div>
+</div>
+</body>
+</html>

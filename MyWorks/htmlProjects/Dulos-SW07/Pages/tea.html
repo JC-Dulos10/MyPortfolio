@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tea</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div>
+		<img src="../Images/topimage.png" style="height: 200px; width: 100%">
+	</div>
+	<div  class="header" id="myHeader">
+		<ul class="navigations">
+			<li><a href="home.html">Home <i class="fas fa-home fa-sm"></i></a></li>
+ 			<li><a href="coffee.html">Coffee <i class="fas fa-mug-hot fa-sm"></i></a></li>
+ 			<li>Tea <i class="fas fa-leaf fa-sm"></i></li>
+ 			<li><a href="shakes.html">Shakes <i class="fas fa-blender fa-sm"></i></a></li>
+  			<li><a href="about.html">About <i class="fas fa-address-card fa-sm"></i></a></li>
+  			<li><a href="order.html">Order <i class="fas fa-shopping-cart fa-sm"></i></a></li>
+		</ul>
+	</div>
+
+<div class="content">
+	<br>
+	<br>
+	<center>
+		<h1 style="background-color: white;">Coffee Shop</h1>
+	</center>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!--Whole Body-->
+	<H1 class="teaTitle">TEA<i class="fas fa-leaf fa-lg"></i></H1>
+	<p style="width: 75%; display: block; margin-right: auto; margin-left: auto;" align="center">
+		Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub native to East Asia. After water, it is the most widely consumed drink in the world. 
+	</p>
+	<div class="main-menu">
+		<div class="menu-custom">
+
+			<div>
+				<Ul class="nav nav-tabs" align = "center">
+					<li class="nav-item text-uppercase">
+						<a class="nav-link active" data-toggle="tab" href="#JT">Jasmine Tea</a>
+					</li>
+
+					<li class="nav-item text-uppercase">
+						<a class="nav-link" data-toggle="tab" href="#GT">Green Tea</a>
+					</li>
+
+					<li class="nav-item text-uppercase">
+						<a class="nav-link" data-toggle="tab" href="#MT">Mint Tea</a>
+					</li>
+				</Ul>
+			</div>
+
+			<div class="tab-content" align="center">
+				
+				<div id="JT" class="tab-pane fade active show">
+					<br>
+					<img src="../Images/Tea/jt.jpg" class="image" align="center">
+					<br>
+					<p>Jasmine Tea is tea scented with the aroma of Jasmine blossoms.</p>
+					<br>
+				</div>
+
+				<div id="GT" class="tab-pane">
+					<br>
+					<img src="../Images/Tea/gt.jpg" class="image" align="center">
+					<br>
+					<p>Green Tea is a type of tea that is made from Camellia sinesis leaves and buds that have not undergone the same withering and oxidation process used to make oolong teas and black teas.</p>
+					<br>
+				</div>
+
+				<div id="MT" class="tab-pane">
+					<br>
+					<img src="../Images/Tea/mt.jpg" class="image" align="center">
+					<br>
+					<p>Mint Tea is a herbal tea made by infusing mint leaves in hot water, it usually made from spearmint or peppermint leaves.</p>
+					<br>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

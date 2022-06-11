@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Store</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="ready()">
+<div class="container">
+	<!-- navbar -->
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		 <a class="navbar-brand" href="#">Movie Store</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Movie Store <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" data-toggle="modal" data-target="#viewCartModal">View Cart <i class="fas fa-shopping-cart fa-sm"></i></a>
+		       <a class="nav-item nav-link active" href="#"> Dulos </a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="container">
+		<H1 class="title">Friendship Genre</H1>
+		<div class="card-custom" id="ls">
+			<center>
+			<img src="../Images/Movies/Friendship/ls.jpeg" class="movie-image" data-toggle="modal" data-target="#movieModal" >
+			<div class="movie-desc" style="display: none;">
+				The film's story revolves around two eccentric and mischievous individuals: a young Hawaiian girl named Lilo Pelekai, who is raised by her older sister Nani after their parents died in a car accident, and a blue extraterrestrial animal-like creature named Experiment 626, who gets adopted by Lilo as her "dog".
+			</div>
+
+			<br>
+
+			<div class="movie-title">
+				<b>Lilo n Stitch</b>
+			</div>
+
+			<div class="movie-price">Php 200.00</div>
+			<br>
+
+			<a href="#" class="btn btn-primary addToCartButton"> Add to Cart</a>
+		</center>
+		</div>
+
+		<div class="card-custom" id="ls2">
+			<center>
+			<img src="../Images/Movies/Friendship/ls2.jpg" class="movie-image" data-toggle="modal" data-target="#movieModal">
+			<div class="movie-desc" style="display: none;">
+				Source Lilo & Stitch 2: Stitch Has a Glitch (credited as just Lilo & Stitch 2 in the title card) is a 2005 direct-to-video animated film produced by Disneytoon Studios. It is the second released sequel film to the 2002 Disney animated feature Lilo & Stitch.
+			</div>
+			<br>
+			<div class="movie-title"><b>Lilo n Stitch 2</b></div>
+			<div class="movie-price">Php 300.00</div>
+			<br>
+			<a href="#" class="btn btn-primary addToCartButton"> Add to Cart</a>
+			</center>
+		</div>
+	</div>
+
+	<br><br><br>
+	
+	<div class="container">
+		<H1 class="title">War Genre</H1>
+		<div class="card-custom" id="fury">
+			<center>
+			<img src="../Images/Movies/War/fury.jpg" class="movie-image"data-toggle="modal" data-target="#movieModal">
+			<br>
+			<div class="movie-title"><b>Fury</b></div>
+			<div class="movie-price">Php 400.00</div>
+			<div class="movie-desc" style="display: none;">
+				Fury is a 2014 American war film written and directed by David Ayer, and starring Brad Pitt, Shia LaBeouf, Logan Lerman, Michael Peña, Jon Bernthal, Jason Isaacs and Scott Eastwood. The film portrays U.S. tank crews in Nazi Germany during the final days of World War II.</div>
+			<br>
+			<a href="#" class="btn btn-primary addToCartButton">Add to Cart</a>
+			</center>
+		</div>
+
+		<div class="card-custom" id="sw">
+			<center>
+			<img src="../Images/Movies/War/sw.jpg"  class="movie-image" data-toggle="modal" data-target="#movieModal">
+			<div class="movie-desc" style="display: none;">
+				Set during the Clone Wars between the Galactic Republic and the Confederacy of Independent Systems, Jedi Knight Anakin Skywalker is assigned an apprentice, Ahsoka Tano. Jabba the Hutt enlists them to rescue his kidnapped son Rotta in exchange for an alliance.
+			</div>
+			<br>
+			<div class="movie-title"><b>Star wars Clone wars</b></div>
+			<div class="movie-price">Php 500.00</div>
+			<br>
+			<a href="#" class="btn btn-primary addToCartButton">Add to Cart</a>
+			</center>
+		</div>
+	</div>
+
+
+	<!-- MOVIE DESCRIPTION MODAL -->
+	<div class="modal fade movie-modal-parent" id="movieModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>Movie Description</h3>
+				</div>
+
+				<div class="modal-body">
+					<div class="movie-title-modal">
+						
+					</div>
+					<div class="movie-description-modal">		
+						
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+
+	<!-- VIEW CART SUMMARY -->
+	<div class="modal fade" id="viewCartModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>CART SUMMARY</h3>
+				</div>
+
+				<div class="modal-body">
+					<div class="cart-items">		
+						<div>
+							Select All <input type="checkbox" name="select-all" id="select-all">
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">				
+					<form action="orderForm.html" method="GET">
+						&nbsp;&nbsp; Total Price: Php.
+						<span class="cart-total-price">0</span>
+						<button id="checkout-button" type="submit" class="btn btn-success" onclick="PurchaseFunction()">Check out</button>
+					</form>
+					<button id="checkout-button" type="submit" class="btn btn-success" onclick="PurchaseFunction()">Purchase</button>
+					<button id="remove-all-button" class="btn btn-danger">Remove Checked</button>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+<br><br><br><br><br>
+</center>
+</body>
+</html>

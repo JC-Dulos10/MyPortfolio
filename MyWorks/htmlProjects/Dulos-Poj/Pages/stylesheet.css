@@ -1,0 +1,114 @@
+body{
+	background-image: url('../Images/pikabg.jpeg');
+}
+.textbox{
+	background-color: white;
+	text-indent: 20px;
+}
+h5{
+	text-align: left;
+	text-indent: 0px;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.main-menu{
+	text-align: center;
+}
+.menu-custom{
+	height: 400px;
+	width: 800px;
+	background-color: white;
+	display: inline-block;
+}
+.main-card{
+	text-align: center;
+}
+.menu-card{
+	height: 500px;
+	width: 1000px;
+	background-color: yellow;
+	display: inline-block;
+	margin-top: auto;
+	opacity: 0.7;
+}
+.menu-card:hover{
+	opacity: 1.0;
+}
+.card-custom{
+	height: 400px;
+	width:  300px;
+	background-color:  yellow;
+	display: inline-block;
+	padding: 20px;
+	opacity: 0.8;
+	border-color: red;
+	border: solid;
+	border-width: 10px;
+	margin-left: 400px;
+	margin-top: 100px;
+
+}
+.card-custom:hover{
+	opacity: 1.0;
+}
+.card-custom img{
+	opacity: 0.7;
+}
+.card-custom img:hover{
+	opacity: 1;
+}
+.title{
+	background-color: red;
+	width: 60%;
+	display:block;
+	margin-left: 30px;
+	color: black;
+	text-align: center;
+	opacity: 0.8;
+}
+.store-item{
+	text-align: left;
+	/*width: 200px;
+	height: 200px;
+	background-color: gold;*/		
+	margin: 10px;
+	padding: 10px;
+	border-radius: 25px;
+	border: 10px solid black;
+	/*overflow: auto;*/
+	display: inline-block;
+	background-color:  red;
+	}
+
+.store-items{
+	text-align: center;
+}
+
+.store-item-image{
+	height: 250px;
+	width: 250px;
+}
+.store-item-title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	width: 100%;
+}
+
+.cart-item-image{
+	width: 100px;
+	height: 100px;
+}
+.cart-item-price-base{
+	display: none;
+}
+.container img{
+	width: 250px;
+	height: 250px;
+}

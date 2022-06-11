@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div>
+		<img src="../Images/topimage.png" style="height: 200px; width: 100%">
+	</div>
+
+	<div  class="header" id="myHeader">
+		<ul class="navigations">
+			<li><a href="home.html">Home <i class="fas fa-home fa-sm"></i></a></li>
+ 			<li><a href="coffee.html">Coffee <i class="fas fa-mug-hot fa-sm"></i></a></li>
+ 			<li><a href="tea.html">Tea <i class="fas fa-leaf fa-sm"></i></a></li>
+ 			<li><a href="shakes.html">Shakes <i class="fas fa-blender fa-sm"></i></a></li>
+  			<li><a href="about.html">About <i class="fas fa-address-card fa-sm"></i></a></li>
+  			<li>Order <i class="fas fa-shopping-cart fa-sm"></i></li>
+  		</ul>
+  	</div>
+
+<div class="content" >
+	<br>
+	<br>
+	<center>
+		<h1 style="background-color: white;">Coffee Shop</h1>
+	</center>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!--Whole Body-->
+	<div align="center">
+		<h1 class="headerContainer">ORDER PAGE <i class="fas fa-shopping-cart fa-sm"></i></h1>
+	</div>
+	<div align="center" class="tableStyle">
+	<form action="order-result.html" method="GET">
+			<div align="left">
+				<label for="name" align="">Name:</label>
+				<br>
+				<input type="text" name="name" id="name" placeholder="Type your name here..." required>
+			</div>
+			<div align="left">
+				<div>
+					<label for="email">Email:</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="Type your email here..." required>
+				</div>
+			</div>
+			<div align="left">
+				<label for="msg">Message </label>
+				<br>
+				<textarea id="msg" placeholder="Type your message here..."></textarea>
+			</div>
+			<div>
+				<br>
+			</div>
+			<div>
+				<div>
+					<label for="category">Category: </label>
+					<br>
+					<input type="radio" name="category" id="category"> Coffee
+					<input type="radio" name="category" id="category"> Tea
+					<input type="radio" name="category" id="category"> Shake
+				</div>
+			</div>
+			<div>
+				<div>
+					<label for="drink">Select drink: </label>
+				</div>
+				<div>
+					<select name="drink" id="drink">
+						<option disabled="true"><---Coffee---></option>
+						<option value="Black Coffee">Black Coffee</option>
+						<option value="Latte">Latte</option>
+						<option value="Caramel Macchiato">Caramel Macchiato</option>
+						<option disabled="true"><---Tea---></option>
+						<option value="Jasmine Tea">Jasmine Tea</option>
+						<option value="Green Tea">Green Tea</option>
+						<option value="Mint Tea">Mint Tea</option>
+						<option disabled="true"><---Shakes---></option>
+						<option value="Mango Shake">Mango Shake</option>
+						<option value="Buko Shake">Buko Shake</option>
+						<option value="Milkshake">Milkshake</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<div align="left">
+					<label for="quantity">Quantity:</label>
+				</div> 
+				<div>
+					<input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="Type here..." size="10" required>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div>
+				<div>
+					<button class="btn btn-success" type="Submit">Submit</button>
+					<button class="btn btn-danger" type="Reset">Reset</button>
+				</div>
+			</div>
+	</form>
+	</div>
+</div>
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

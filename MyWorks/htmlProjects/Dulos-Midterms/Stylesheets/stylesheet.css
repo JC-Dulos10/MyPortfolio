@@ -1,0 +1,155 @@
+.TitleContainer{
+	padding: 10px;
+	display: block;
+	width: 75%;
+	height: 150px;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	opacity: 0.5;
+	position: sticky;
+}
+
+.Title{
+	color: white;
+	font-size: 20px;
+}
+
+img{
+	width: 250px;
+	height: 250px;
+}
+
+body{
+	background-image: url(../Images/bg.png);
+}
+
+ul.breadCrumbs {
+  	padding: 10px 16px;
+  	list-style: none;
+    background-color: #eee;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    align-content: center;
+ }
+
+ul.breadCrumbs li {
+	display: inline;
+	font-size: 18px;
+}
+
+ul.breadCrumbs li+li:before {
+	 padding: 8px;
+ 	 color: black;
+  	content: "/\00a0";
+}
+
+ul.breadCrumbs li a {
+  	color: #0275d8;
+  	text-decoration: none;
+}
+
+ul.breadCrumbs li a:hover {
+  	color: #01447e;
+  	text-decoration: underline;
+}
+
+.content {
+ 	 padding: 16px;
+ 	 display: block;
+ 	 margin-left: auto;
+ 	 margin-right: auto;
+}
+
+.casing{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;		
+	opacity: 1.0;
+	border-radius: 25px;
+}
+
+.headerContainer{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+	width: 30%;
+}
+
+.title{
+	background-color: #9b9b8c;
+	width: 60%;
+	display:block;
+	margin-left: 30px;
+	color: brown;
+	text-align: center;
+}
+
+.title:hover{
+	color: black;
+	background-color: white;
+}
+
+.teaTitle{
+	background-color: #9b9b8c;
+	width: 60%;
+	display:block;
+	color: brown;
+	text-align: center;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.teaTitle:hover{
+	color: black;
+	background-color: white;
+}
+
+.pic img{
+	opacity: 1.00;
+	float: right;
+	overflow: auto;
+}
+
+.http{
+	color: brown; 
+}
+
+.http:hover{
+	color: black;
+}
+
+.imageAvailable{
+	opacity: 0.5;
+}
+
+.imageAvailable:hover{
+	opacity: 1.0;
+}
+
+.btnOrder:hover{
+	size: 45px;
+	background-color: red;
+	color: white;
+}
+
+.back{
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.tableStyle{
+	background-color: white;
+	width: 15%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

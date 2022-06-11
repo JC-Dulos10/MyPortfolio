@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Details</title>
+	<link rel="stylesheet" type="text/css" href="../Stylesheets/stylesheet.css">
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<div class = "TitleContainer">
+	<div class="Title" align="center">
+		<h1>Shoe Mart</h1>
+		<p>Home Page</p>	
+	</div>
+</div>
+<img src="../Images/logo.png" height="150px" width="150px" style="float: left; margin-left: 250px; margin-top: -160px; position: sticky; width: 150px; height: 150px;">
+<nav>
+	<div class="header" id="myHeader" align="center">
+		<ul class="breadCrumbs">
+			<li><a href="Home.html"> Home <i class="fas fa-home fa-sm"></i></a></li>
+ 			<li><a href="Item1.html">Adidas <i class="fab fa-atlassian fa-sm"></i></a></li>
+ 			<li><a href="Item2.html">Nike <i class="fas fa-check fa-sm"></i></a></li>
+  			<li><a href="Item3.html">New Balance <i class="fas fa-shoe-prints fa-sm"></i></a></li>
+  			<li><a href="Cart.html">Cart <i class="fas fa-shopping-cart fa-sm"></i></a></li>
+  		</ul>
+	</div>
+</nav>
+<div class="back" align="center">
+	<button class="btnOrder"><a href="Cart.html">Go back to Cart <i class="fas fa-shopping-cart fa-sm"></i></a></button>
+</div>
+<br>
+<div align="center" class="tableStyle">
+	<form action="order-result.html" method="GET">
+		<div>
+			<label for="name">First Name:</label>
+			<input type="text" name="name" id="name" placeholder="Type your First Name here..." required="">
+		</div>
+		<div>
+			<div>
+				<label for="name">Last Name:</label>
+				<input type="text" name="name" id="name" placeholder="Type your Last Name here..." required>
+			</div>
+		</div>
+		<br>
+		<div>
+			<label for="address1">Address:</label>
+			<input type="text" name="address1" id="address1" placeholder="Type your Address here..." required>
+		</div>
+		<div>
+			<label for="address2">Address:</label>
+			<input type="text" name="address2" id="address2" placeholder="Type your Address here..." required>
+		</div>
+		<br>
+		<div>
+			<div align="left">
+				<div>
+					<label for="drink">Select City: </label>
+				</div>
+				<div align="center">
+					<select name="drink" id="drink">
+						<option disabled="true">City</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div align="left">
+				<div>
+					<label for="drink">Select Region: </label>
+				</div>
+				<div align="center">
+					<select name="drink" id="drink">
+						<option disabled="true">Region</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<label for="quantity">Zipcode:</label>
+			</div> 
+			<div>
+				<input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="Type Zipcode here..." size="10">
+			</div>
+		</div>
+		<div>
+			<div align="left">
+				<div>
+					<label for="drink">Select Country: </label>
+				</div>
+				<div align="center">
+					<select name="drink" id="drink">
+						<option disabled="true">Country</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>
+				<button class="btnOrder" type="Submit">Submit</button>
+			</div>
+		</div>
+		<div>
+			<div>
+				<button class="btnOrder" type="Reset">Reset</button>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>

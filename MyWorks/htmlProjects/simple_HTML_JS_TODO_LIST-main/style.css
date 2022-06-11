@@ -1,0 +1,131 @@
+body {
+    background-color: #FFFC31;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.container
+ {
+    margin-top: 50px;
+    background-color:#F6F7EB;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-weight: 300;
+}
+
+.container
+ h2 {
+    margin: 0;
+}
+
+.container
+ p {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
+}
+
+.container
+ ol {
+    margin: 20px 0;
+}
+
+.container
+ ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.container
+ ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.container
+ .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.container
+ .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #E94F37;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.container
+ .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.container
+ input {
+    padding: 3px 6px;
+}
+
+.container
+ form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container
+ #clear-button {
+    background-color: #E94F37;
+}
+
+.container
+ #empty-button {
+    background-color: #393E41;
+}
+
+.container
+ #save-button {
+    background-color: #E94F37;
+}
+
+@media only screen and (min-width: 1400px) {
+    .container
+     {
+        width: 50%;
+    }
+
+    .container
+     input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .container
+     {
+        width: 75%;
+    }
+
+    .container
+     input {
+        width: 400px;
+    }
+}

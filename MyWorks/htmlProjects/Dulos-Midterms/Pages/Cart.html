@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart Summary</title>
+	<link rel="stylesheet" type="text/css" href="../Stylesheets/stylesheet.css">
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<div class = "TitleContainer">
+	<div class="Title" align="center">
+		<h1>Shoe Mart</h1>
+		<p>Home Page</p>	
+	</div>
+</div>
+<img src="../Images/logo.png" height="150px" width="150px" style="float: left; margin-left: 250px; margin-top: -160px; position: sticky; width: 150px; height: 150px;">
+<nav>
+	<div class="header" id="myHeader" align="center">
+		<ul class="breadCrumbs">
+			<li><a href="Home.html"> Home <i class="fas fa-home fa-sm"></i></a></li>
+ 			<li><a href="Item1.html">Adidas <i class="fab fa-atlassian fa-sm"></i></a></li>
+ 			<li><a href="Item2.html">Nike <i class="fas fa-check fa-sm"></i></a></li>
+  			<li><a href="Item3.html">New Balance <i class="fas fa-shoe-prints fa-sm"></i></a></li>
+  			<li>Cart <i class="fas fa-shopping-cart fa-sm"></i></li>
+  		</ul>
+	</div>
+</nav>
+<div>
+	<form>
+	<div>
+		<br>
+		<br>
+		<a href="Cart.html" class="http"><H1 class="title">My Cart<i class="fas fa-shopping-cart fa-sm"></i></H1></a>
+		<table cellspacing="10px" cellpadding="10px" border="1" style="border-style: solid; margin-left: auto;margin-right: auto; background-color: white;">
+			<div>
+				<tr>
+					<th align="left">
+						select all <input type="checkbox" name="category" id="category">
+					</th>
+				</tr>
+  				<tr>
+  					<th>
+  						Men training Shoes <input type="checkbox" name="category" id="category">
+  					</th>
+  				</tr>
+				<tr>
+					<td>Training shoes for men</td>
+				</tr>
+				<tr>
+					<td><img src="../Images/Item1/1.jpg" class="imageAvailable"></td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<label for="quantity">Quantity:</label>
+						</div>
+						<div>
+							<input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="Type here..." size="10">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Php. 1,000.00</td>
+				</tr>
+			</div>
+		</table>
+		<table cellspacing="10px" cellpadding="10px" border="1" style="border-style: solid; margin-left: auto;margin-right: auto; background-color: white;">
+			<div>
+  				<tr>
+  					<th>
+  						Women training Shoes <input type="checkbox" name="category" id="category">
+  					</th>
+  				</tr>
+				<tr>
+					<td>Training shoes for Women</td>
+				</tr>
+				<tr>
+					<td><img src="../Images/Item2/1w.jpg" class="imageAvailable"></td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<label for="quantity">Quantity:</label>
+							<input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="Type here..." size="10">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Php. 1,000.00</td>
+				</tr>
+			</div>
+		</table>
+		<table cellspacing="10px" cellpadding="10px" border="1" style="border-style: solid; margin-left: auto;margin-right: auto; background-color: white;">
+			<div>
+  				<tr>
+  					<th>
+  						Men running shoes <input type="checkbox" name="category" id="category">
+  					</th>
+  				</tr>
+				<tr>
+					<td>Running shoes for men</td>
+				</tr>
+				<tr>
+					<td><img src="../Images/Item3/2.jpg" class="imageAvailable" ><br></td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<label for="quantity">Quantity:</label>
+							<input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="Type here..." size="10">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Php. 1,000.00</td>
+				</tr>
+			</div>
+		</table>
+		</div>
+	</div>
+	</form>
+</div>
+<br>
+<div align="center">
+	<button><a href="Order.html">Proceed to Order</a></button>
+</div>
+<br>
+<div class="back" align="center">
+	<button><a href="#top">Go back to the Top</a></button>
+</div>
+</body>
+</html>

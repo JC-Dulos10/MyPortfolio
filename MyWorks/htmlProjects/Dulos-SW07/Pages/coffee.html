@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coffee</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+	<img src="../Images/topimage.png" style="height: 200px; width: 100%">
+</div>
+<div  class="header" id="myHeader">
+	<ul class="navigations">
+		<li><a href="home.html">Home <i class="fas fa-home fa-sm"></i></a></li>
+ 		<li>Coffee <i class="fas fa-mug-hot fa-sm"></i></li>
+ 		<li><a href="tea.html">Tea <i class="fas fa-leaf fa-sm"></i></a></li>
+ 		<li><a href="shakes.html">Shakes <i class="fas fa-blender fa-sm"></i></a></li>
+  		<li><a href="about.html">About <i class="fas fa-address-card fa-sm"></i></a></li>
+  		<li><a href="order.html">Order <i class="fas fa-shopping-cart fa-sm"></i></a></li>
+	</ul>
+</div>
+
+<div class="content">
+	<br>
+	<br>
+	<center>
+		<h1 style="background-color: white;">Coffee Shop</h1>
+	</center>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!--Whole Body-->
+	<H1 class="title">COFFEE <i class="fas fa-mug-hot fa-lg"></i></H1>
+	<p style="width: 75%; display: block; margin-right: auto; margin-left: auto;" align="center">
+		Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. The genus Coffea is native to tropical Africa and Madagascar, the Comoros, Mauritius, and Réunion in the Indian Ocean.
+	</p>
+	<div class="main-menu">
+		<div class="menu-custom">
+
+			<div>
+				<Ul class="nav nav-tabs" align = "center">
+					<li class="nav-item text-uppercase">
+						<a class="nav-link active" data-toggle="tab" href="#BC">Black Coffee</a>
+					</li>
+
+					<li class="nav-item text-uppercase">
+						<a class="nav-link" data-toggle="tab" href="#L">Latte</a>
+					</li>
+
+					<li class="nav-item text-uppercase">
+						<a class="nav-link" data-toggle="tab" href="#CM">Caramel Macchiato</a>
+					</li>
+				</Ul>
+			</div>
+
+			<div class="tab-content" align="center">
+				<div id="BC" class="tab-pane fade active show">
+					<br>
+					<img src="../Images/Coffee/bc.jpg" class="image" align="center">
+					<br>
+					<p>Black coffee is normal coffee without additives like sugar and cream/milk after grinding and brewing the coffee beans.</p>
+					<br>
+				</div>
+
+				<div id="L" class="tab-pane">
+					<br>
+					<img src="../Images/Coffee/l.jpg" class="image" align="center">
+					<br>
+					<p>A latte is a coffee drink made with espresso and steamed milk.</p>
+					<br>
+				</div>
+
+				<div id="CM" class="tab-pane">
+					<br>
+					<img src="../Images/Coffee/cm.jpg" class="image" align="center">
+					<br>
+					<p>Caramel Macchiato is espresso-based coffee made with vanilla syrup, steamed milk, espresso and caramel sauce.</p>
+					<br>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

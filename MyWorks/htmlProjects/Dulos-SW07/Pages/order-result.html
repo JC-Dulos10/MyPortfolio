@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Result</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://kit.fontawesome.com/f7015e5bbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div>
+		<img src="../Images/topimage.png" style="height: 200px; width: 100%">
+	</div>
+
+	<div  class="header" id="myHeader">
+		<ul class="navigations">
+			<li><a href="home.html">Home <i class="fas fa-home fa-sm"></i></a></li>
+ 			<li><a href="coffee.html">Coffee <i class="fas fa-mug-hot fa-sm"></i></a></li>
+ 			<li><a href="tea.html">Tea <i class="fas fa-leaf fa-sm"></i></a></li>
+ 			<li><a href="shakes.html">Shakes <i class="fas fa-blender fa-sm"></i></a></li>
+  			<li><a href="about.html">About <i class="fas fa-address-card fa-sm"></i></a></li>
+  			<li><a href="order.html">Order <i class="fas fa-shopping-cart fa-sm"></i></a></li>
+  			<li>Order Confirmation<i class="fas fa-shopping-cart fa-sm"></i></li>
+  		</ul>
+  	</div>
+
+<div class="content">
+	<div class="result">
+		<br>
+		<br>
+		<br>
+		<h1 class="headerContainer">Thank you for ordering...</h1>
+		<img src="../Images/thanks.gif" alt="cat Thanks" align="center" style="opacity: 1.0">
+	</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
