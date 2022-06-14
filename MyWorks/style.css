@@ -168,3 +168,28 @@
 		99.1%, 99.9% {transform: rotateY(180deg) rotateX(90deg) translatez(5px); opacity: 0.95; filter: alpha(opacity=95);}
 	}
 
+.modal-header, .modal-body{
+	color: black;
+}
+
+.modal-content{
+	height: 80vh;
+}
+
+.tableContents{
+	text-align: center;
+	border-collapse: collapse;
+  	width: 55vw;
+	height: 70vh;
+	overflow-x: auto;
+	size: 80%;
+}
+
+.tableContents2{
+	border-collapse: collapse;
+  	width: 50vw;
+	height: 70vh;
+	overflow-x: auto;
+	size: 100%;
+	padding-left: 12%;
+}
